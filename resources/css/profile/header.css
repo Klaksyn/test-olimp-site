@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+    --text-size: 21px;
+    --text-size-btn-new-project: 20px;
+
+    --font-family-text: 'Nunito', serif;
+    
+    --text-color: #9E0000;
+    --search-color: #333333;
+
+    --white: #fff;
+}
+
+* {
+    list-style-type: none;
+}
+
+/* head */
+.head {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* head - icon-home */
+.icon_home {
+    margin-left: 13rem;
+}
+.link_home {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-weight: bold;
+    font-family: var(--font-family-text);
+    font-size: var(--text-size);
+}
+
+/* head - search */
+.search {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 8px 14px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    transition: border-color 0.2 ease;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: var(--text-size);
+    color: var(--search-color);
+    padding-right: 10px;
+}
+
+.icon_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon_search svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* head - btn new project */
+.btn_new_project {
+    margin-left: 5rem;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 206px;
+    height: 2.5rem;
+    padding: 3px 27px;
+
+    background-color: var(--text-color);
+    color: var(--white);
+
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.btn_new_project a {
+    color: var(--white);
+    text-decoration: none;
+
+    font-size: var(--text-size-btn-new-project);
+    font-family: var(--font-family-text);
+    font-weight: bold;
+}
+.icon_add {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+
+/* head_nav */
+.head_nav {
+    display: flex;
+    text-align: left;
+    align-items: left;
+}
+
+
+.head_nav ul li a {
+    color: red;
+    font-weight: 300;
+    font-family: serif;
+    text-decoration: none;
+}
+
+header a:hover {
+    /* */
+}

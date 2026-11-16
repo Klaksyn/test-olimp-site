@@ -13,6 +13,8 @@ use App\Helpers\Layouts;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профиль</title>
+
+    <link href="resources/css/profile.css" rel="stylesheet" type="text/css"  />
 </head>
 <body>
     <header>
