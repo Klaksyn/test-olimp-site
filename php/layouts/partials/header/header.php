@@ -5,23 +5,28 @@ require_once __DIR__ . '/Icons/Icons.php';
 ?>
 
 <div class="head">
-    <a class="icon_home" href="">
-        <?= Icons::Home(); ?>
-    </a>
-    <a class="link_home" href="">Личный кабинет</a>
+    <div class="block_before_search">
+        <a class="icon_home" href="">
+            <?= Icons::Home(); ?>
+        </a>
+        <a class="link_home" href="">Личный кабинет</a>
+    </div>
 
     <div class="search">
         <input type="text" placeholder="Search projects......" name="query" />
         <a href="" class="icon_search"><?= Icons::Search(); ?></a>
     </div>
 
-    <div class="btn_new_project">
-        <a href="" class="icon_add"><?= Icons::Add(); ?></a>
-        <a href="">New Project</a>
+    <div class="block_after_search">
+        <div class="btn_new_project">
+            <a href="" class="icon_add"><?= Icons::Add(); ?></a>
+            <a href="">New Project</a>
+        </div>
+
+        <a href="" class="avatar">
+            <img src="" />
+        </a>
     </div>
-
-
-    <img src="" alt="avatar" class="avatar" />
 
 </div>
 

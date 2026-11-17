@@ -26,6 +26,8 @@
 /* head - icon-home */
 .icon_home {
     margin-left: 13rem;
+    width: 55px;
+    height: 54px;
 }
 .link_home {
     margin-left: 2rem;
@@ -37,13 +39,20 @@
     font-size: var(--text-size);
 }
 
+.block_before_search {
+    display: contents;
+}
+
 /* head - search */
 .search {
     margin-left: 5rem;
+    margin-right: 10rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
+    width: 472px;
+    height: 52px;
     padding: 8px 14px;
     border: 1px solid var(--text-color);
     border-radius: 8px;
@@ -75,6 +84,11 @@
     display: block;
 }
 
+.block_after_search {
+    display: contents;
+}
+
+
 /* head - btn new project */
 .btn_new_project {
     margin-left: 5rem;
@@ -84,8 +98,8 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 206px;
-    height: 2.5rem;
+    width: 177px;
+    height: 52px;
     padding: 3px 27px;
 
     background-color: var(--text-color);
@@ -104,10 +118,16 @@
 }
 .icon_add {
     width: 30px;
-    height: 30px;
-    display: block;
+    height: 29px;
 }
 
+.avatar {
+    width: 70px;
+    height: 69px;
+    background: #000;
+    border-radius: 100px;
+    margin-left: 2.5rem;
+}
 
 
 /* head_nav */
