@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/Icons/Icons.php';
+require_once __DIR__ . '/../Icons/Icons.php';
 
 ?>
 
