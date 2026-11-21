@@ -37,3 +37,7 @@
     height: 524px;
     background-color: var(--bg-color-about);
 }
+
+.about h3 {
+    color: white;
+}

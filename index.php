@@ -1,9 +1,13 @@
 <?php
 
-require_once __DIR__ . '/php/Helpers/Layouts.php';
-require_once __DIR__ . '/php/layouts/partials/Icons/Icons.php';
+require_once __DIR__ . '/App/Models/User.php';
+require_once __DIR__ . '/App/Helpers/Layouts.php';
+require_once __DIR__ . '/App/layouts/partials/Icons/Icons.php';
 
 use App\Helpers\Layouts;
+use App\Models\User;
+
+$userData = User::findById(1);
 
 ?>
 
@@ -27,38 +31,41 @@ use App\Helpers\Layouts;
                 <img src="" alt="" />
             </div>
             <div class="about">
-                <h3></h3>
-                <div class="phone">
-                    <span><?= Icons::Phone(); ?></span>
-                    <span></span>
+                <h3><?= htmlspecialchars($userData['first_name']); ?></h3>
+                <div class="about_left">
+                    <div class="phone">
+                        <span><?= Icons::Phone(); ?></span>
+                        <span></span>
+                    </div>
+
+                    <div class="mail">
+                        <span><?= Icons::Email(); ?></span>
+                        <span></span>
+                    </div>
+    
+                    <div class="browser">
+                        <span><?= Icons::Browser(); ?></span>
+                        <span></span>
+                    </div>
+
+                    <div class="github">
+                        <span><?= Icons::GitHub(); ?></span>
+                        <span></span>
+                    </div>
+
+                    <div class="linkedin">
+                        <span><?= Icons::LinkedIn(); ?></span>
+                        <span></span>
+                    </div>
                 </div>
 
-                <div class="mail">
-                    <span><?= Icons::Email() ?></span>
-                    <span></span>
-                </div>
-
-                <div class="browser">
-                    <span><?= Icons::Browser() ?></span>
-                    <span></span>
-                </div>
-
-                <div class="github">
-                    <span><?= Icons::GitHub() ?></span>
-                    <span></span>
-                </div>
-
-                <div class="linkedin">
-                    <span><?= Icons::LinkedIn() ?></span>
-                    <span></span>
-                </div>
-
-                <div class="student">
-                    <span><?= Icons::Student() ?></span>
-                    <span></span>
+                <div class="about_right">
+                    <div class="student">
+                        <span><?= Icons::Student(); ?></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer>
