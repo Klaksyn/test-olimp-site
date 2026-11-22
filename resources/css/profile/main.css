@@ -1,0 +1,131 @@
+@import url("header.css");
+
+:root {
+    --bg-avatar: linear-gradient(90deg, #270B36, #C01432 100%);
+    --bg-color-about: #7A0202;
+    
+    --text-color: #9E0000;
+    
+    --font-size-name: 40px;
+    --font-size-about-user: 21px;
+    --font-size-title: 31px;
+
+    --font-family-text: "Nunito", serif;
+}
+
+.about_user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    box-sizing: border-box;
+    min-height: calc(100vh - 130px);
+}
+
+/* left */
+.left {
+    display: grid;
+    height: fit-content;
+}
+
+.avatar_main {
+    background: var(--bg-avatar);
+    width: 416px;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 38px;
+    box-sizing: border-box;
+}
+
+.avatar_main img {
+    width: 318px;
+    height: 318px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.about {
+    width: auto;
+    height: fit-content;
+    background-color: var(--bg-color-about);
+    padding: 40px 28px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    column-gap: 15px;
+
+}
+
+.about h3 {
+    grid-column: 1 / -1;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--font-size-name);
+    font-weight: bold;
+    font-family: var(--font-family-text);
+}
+
+.about_left {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.about_left > div ,
+.about_right > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.about_left > div span:first-child ,
+.about_right > div span:first-child {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+
+.about span {
+    font-size: var(--font-size-about-user);
+    font-family: var(--font-family-text);
+    color: white;
+    word-break: break-word;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 5vw 50px 5vw;
+}
+
+.right .title {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.right .title a,
+.right .title span {
+    color: var(--text-color);
+    font-size: var(--font-size-title);
+    text-decoration: none;
+}
+
+.right .title .selected {
+    font-weight: bold;
+}

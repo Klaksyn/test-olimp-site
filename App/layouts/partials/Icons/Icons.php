@@ -30,9 +30,9 @@ class Icons {
 
     public static function Add(): string {
         return '<svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="28" height="27" rx="8" stroke-width="2" stroke="white"/>
-                <path d="M15 8V20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
-                <path d="M9 14H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                    <rect x="1" y="1" width="28" height="27" rx="8" stroke-width="2" stroke="white"/>
+                    <path d="M15 8V20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                    <path d="M9 14H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
                 </svg>
                 ';
     }
@@ -78,5 +78,14 @@ class Icons {
                 <path d="M19.5 0L0 12L19.5 24L35.4545 14.18V28H39V12M7.09091 20.36V28.36L19.5 36L31.9091 28.36V20.36L19.5 28L7.09091 20.36Z" fill="white"/>
             </svg>
             ';
+    }
+
+    public static function Edit(): string {
+        return '
+            <svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.747 17.0526L31.141 14.6653C31.977 13.8316 33.041 13.3768 34.2 13.2632V11.3684L22.8 0H3.8C1.691 0 0 1.68632 0 3.78947V30.3158C0 32.4 1.691 34.1053 3.8 34.1053H15.2V30.5621L15.447 30.3158H3.8V3.78947H17.1V17.0526H28.747ZM20.9 2.84211L31.35 13.2632H20.9V2.84211ZM30.647 20.52L34.523 24.3853L22.876 36H19V32.1347L30.647 20.52ZM37.715 21.2021L35.853 23.0589L31.977 19.1937L33.839 17.3368C34.2 16.9579 34.827 16.9579 35.207 17.3368L37.715 19.8379C38.095 20.2168 38.095 20.8421 37.715 21.2021Z" fill="#9E0000"/>
+            </svg>
+
+        ';
     }
 }

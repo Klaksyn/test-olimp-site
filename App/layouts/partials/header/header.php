@@ -1,6 +1,11 @@
 <?php
 
-require_once __DIR__ . '/../Icons/Icons.php';
+require_once dirname(__DIR__, 1) . '/Icons/Icons.php';
+require_once dirname(__DIR__, 3) . '/Models/User.php';
+
+use App\Models\User;
+
+$userData = User::findById(1);
 
 ?>
 
@@ -29,7 +34,7 @@ require_once __DIR__ . '/../Icons/Icons.php';
             </li>
             <li class="header_menu_items">
                 <a href="" class="avatar">
-                    <img src="" alt="" />
+                    <img src="<?= htmlspecialchars($userData['avatar']) ?>" alt="" />
                 </a>
             </li>
         </ul>
