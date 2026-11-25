@@ -36,34 +36,34 @@ $userData = User::findById(1);
                     <div class="about_left">
                         <div class="phone">
                             <span><?= Icons::Phone(); ?></span>
-                            <span><?= htmlspecialchars($userData['phone']) ?></span>
+                            <span><?= htmlspecialchars($userData['phone'] ?? '') ?></span>
                         </div>
 
                         <div class="mail">
                             <span><?= Icons::Email(); ?></span>
-                            <span><?= htmlspecialchars($userData['email']) ?></span>
+                            <span><?= htmlspecialchars($userData['email'] ?? '') ?></span>
                         </div>
 
                         <div class="browser">
                             <span><?= Icons::Browser(); ?></span>
-                            <span><?= htmlspecialchars($userData['site']) ?></span>
+                            <span><?= htmlspecialchars($userData['site'] ?? '') ?></span>
                         </div>
 
                         <div class="github">
                             <span><?= Icons::GitHub(); ?></span>
-                            <span><?= htmlspecialchars($userData['github']) ?></span>
+                            <span><?= htmlspecialchars($userData['github'] ?? '') ?></span>
                         </div>
 
                         <div class="linkedin">
                             <span><?= Icons::LinkedIn(); ?></span>
-                            <span><?= htmlspecialchars($userData['linkedin']) ?></span>
+                            <span><?= htmlspecialchars($userData['linkedin'] ?? '') ?></span>
                         </div>
                     </div>
 
                     <div class="about_right">
                         <div class="student">
                             <span><?= Icons::Student(); ?></span>
-                            <span><?= htmlspecialchars($userData['study']) ?></span>
+                            <span><?= htmlspecialchars($userData['study'] ?? '') ?></span>
                         </div>
                     </div>
                 </div>
@@ -75,6 +75,74 @@ $userData = User::findById(1);
                     <span>|</span>
                     <a class="invite unselect" href="">Invite</a> 
                 </div>
+
+                <div class="menu"> 
+                    <div class="received">
+
+                        <div class="request-block">
+                            <h3>PROJECT CROM</h3>
+                            <div class="request-user"> <!-- max 5 user -->
+                                <?php foreach ()  { ?>
+                                    <img src="" class="avatar" alt="avatar" />
+                                    <div class="user-text">
+                                        <h4>Viktor</h4>
+                                        <p>Connections Workshop</p>
+                                    </div>
+
+                                    <form action="" method="POST" class="btns">
+                                        <button type="submit" class="btn_accept">
+                                            <img src="" alt="" />Accept
+                                        </button>
+                                        <button type="submit" class="btn_decline">
+                                            <img src="" alt="" />Decline
+                                        </button>
+                                    </form>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="request-block">
+                            <h3>DEVQUEST</h3>
+                            <div class="request-user">
+                                <?php foreach ()  { ?>
+                                    <img src="" class="avatar" alt="avatar" />
+                                    <div class="user-text">
+                                        <h4>Viktor</h4>
+                                        <p>Connections Workshop</p>
+                                    </div>
+
+                                    <form action="" method="POST" class="btns">
+                                        <button type="submit" class="btn_accept">
+                                            <img src="" alt="" />Accept
+                                        </button>
+                                        <button type="submit" class="btn_decline">
+                                            <img src="" alt="" />Decline
+                                        </button>
+                                    </form>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="sent" style="display: none;">
+                    </div>
+                </div>
+
+
+                <div class="about">
+                    <h1>About Me</h1>
+                    <input type="text" value="" /> 
+
+                    
+                    <h1>Skills</h1>
+                    <input type="text" value="" />
+
+                    
+                    <h1>Achievements</h1>
+                    <input type="text" value="" />
+                </div>
+
 
 
             </div>
